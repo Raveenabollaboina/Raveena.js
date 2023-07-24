@@ -1,0 +1,13 @@
+function SlaDatagovtfibreprovide(executionContext) {
+	var formContext = executionContext.getFormContext();
+	var pickList = formContext.getControl("son_sla");
+	if (pickList !== null) {
+		pickList.removeOption(922900000);
+		pickList.removeOption(922900001);
+		pickList.removeOption(922900002);
+		pickList.removeOption(922900003);
+		pickList.removeOption(922900004);
+		pickList.removeOption(922900005);
+		pickList.removeOption(922900006);
+	}
+}  
