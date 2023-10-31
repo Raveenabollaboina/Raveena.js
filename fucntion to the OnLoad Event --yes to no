@@ -1,4 +1,4 @@
-# Raveena.js
+# Raveena.js // put this function is on Save//
 /son_pricingspeciallyaccessed
   //bind the fucntion to the OnLoad Event
     function setValuetotheField(executionContext) {
