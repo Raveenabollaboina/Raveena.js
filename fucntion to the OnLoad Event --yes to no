@@ -1,0 +1,13 @@
+# Raveena.js
+/son_pricingspeciallyaccessed
+  //bind the fucntion to the OnLoad Event
+    function setValuetotheField(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var formType = formContext.ui.getFormType();
+    if (formType == 1) {
+        formContext.getAttribute("son_pricingspeciallyaccessed").setValue("Yes");
+    }
+    if (formType == 2) {
+        formContext.getAttribute("son_pricingspeciallyaccessed").setValue("No");
+    }
+}
