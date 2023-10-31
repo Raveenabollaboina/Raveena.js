@@ -1,4 +1,4 @@
-// working---make read only based on security role--ipvpn-Sales//
+// working---make read only based on security role--ipvpn-Sales// Security role- sales //
 function Sales(executionContext) {
 
     var formContext = executionContext.getFormContext();
