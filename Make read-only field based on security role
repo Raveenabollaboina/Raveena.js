@@ -1,0 +1,29 @@
+// working---make read only based on security role--ipvpn-Sales//
+function Sales(executionContext) {
+
+    var formContext = executionContext.getFormContext();
+
+    var usersRoles = Xrm.Utility.getGlobalContext().userSettings.roles;
+
+    usersRoles.forEach(function hasRoleName(item, index) {
+
+        if (item.name === 'Sales') {
+
+            formContext.getControl("son_omscircuitid").setDisabled(true);
+            formContext.getControl("son_trunkcallforwardbillingnumber").setDisabled(true);
+            formContext.getControl("son_uan").setDisabled(true);
+            formContext.getControl("son_omsordernumber").setDisabled(true);
+            formContext.getControl("son_aspticketordernumber").setDisabled(true);
+            formContext.getControl("son_ugorder").setDisabled(true);
+            formContext.getControl("son_sipaccountnumber").setDisabled(true);
+            formContext.getControl("son_tisserviceordernumber").setDisabled(true);
+            formContext.getControl("son_comments").setDisabled(true);
+            formContext.getControl("son_tisaccountnumber").setDisabled(true);
+            formContext.getControl("son_sipvoicenumberblock").setDisabled(true);
+
+
+        };
+
+    });
+
+}
