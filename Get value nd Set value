@@ -1,0 +1,11 @@
+# Raveena.js
+ //get value and set value//
+    function OnsavecustomerASnumber(executionContext) {
+
+        var formContext = executionContext.getFormContext();
+        var sonCustomerAsNumber = formContext.getAttribute("son_customerasnumber");
+        if (sonCustomerAsNumber && sonCustomerAsNumber.getValue() === null) {
+            sonCustomerAsNumber.setValue("64512");
+        }
+
+    }
