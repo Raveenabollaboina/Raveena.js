@@ -1,0 +1,20 @@
+# Raveena.js
+// Mandatory//
+function Datangnmandatory(executionContext) {
+        var formContext = executionContext.getFormContext();
+        formContext.getAttribute("son_installprice").setRequiredLevel("required");
+        formContext.getAttribute("son_annualrental").setRequiredLevel("required");
+        formContext.getAttribute("son_sla").setRequiredLevel("required");
+        formContext.getAttribute("son_changetypes").setRequiredLevel("required");
+
+    }
+//Non- Mandatory //
+function Connectrequired(executionContext) {
+        var formContext = executionContext.getFormContext();
+        formContext.getAttribute("son_instaleircodeorpostcode").setRequiredLevel("none");
+        formContext.getAttribute("son_installsitestreet").setRequiredLevel("none");
+        formContext.getAttribute("son_installsitecity").setRequiredLevel("none");
+        formContext.getAttribute("son_installsitecounty").setRequiredLevel("none");
+        formContext.getAttribute("son_installsitecountry").setRequiredLevel("none");
+
+    }
